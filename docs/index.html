@@ -447,15 +447,17 @@
         }
 
         .unicamLogo { 
-            max-height: 64px; /* dimensione contenuta */ 
-            height: auto; 
-            width: auto; 
-            margin-left: auto; 
-            margin-right: 0; 
-            padding: 4px; 
-            border-radius: 8px; 
-            box-shadow: 0 0 12px rgba(0,255,143,.15); 
-            background: rgba(7,16,18,.85); /* sfondo coerente con il tema */ 
+            position: absolute; /* Posizionamento assoluto rispetto alla pagina */
+            top: 16px; /* Distanza dall'alto (modifica il valore secondo il bisogno) */
+            right: 16px; /* Distanza dal lato destro */
+            max-height: 64px; /* Dimensione contenuta */
+            height: auto;
+            width: auto;
+            padding: 4px;
+            border-radius: 8px;
+            box-shadow: 0 0 12px rgba(0,255,143,.15);
+            background: rgba(7,16,18,.85); /* Sfondo coerente con il tema */
+            z-index: 50; /* Assicurati che sia sopra altri elementi */ /* sfondo coerente con il tema */ 
         }
 
         /* Link drawer: senza riquadro */
